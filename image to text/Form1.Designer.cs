@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBoxImage = new PictureBox();
             richTextBoxResult = new RichTextBox();
             statusStripMain = new StatusStrip();
@@ -113,14 +114,14 @@
             // addToANoteToolStripMenuItem
             // 
             addToANoteToolStripMenuItem.Name = "addToANoteToolStripMenuItem";
-            addToANoteToolStripMenuItem.Size = new Size(180, 22);
+            addToANoteToolStripMenuItem.Size = new Size(144, 22);
             addToANoteToolStripMenuItem.Text = "add to a note";
             addToANoteToolStripMenuItem.Click += addToANoteToolStripMenuItem_Click;
             // 
             // creatANoteToolStripMenuItem
             // 
             creatANoteToolStripMenuItem.Name = "creatANoteToolStripMenuItem";
-            creatANoteToolStripMenuItem.Size = new Size(180, 22);
+            creatANoteToolStripMenuItem.Size = new Size(144, 22);
             creatANoteToolStripMenuItem.Text = "creat a note";
             creatANoteToolStripMenuItem.Click += creatANoteToolStripMenuItem_Click;
             // 
@@ -193,9 +194,10 @@
             Controls.Add(richTextBoxResult);
             Controls.Add(pictureBoxImage);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStripMain;
             Name = "Form1";
-            Text = "gini";
+            Text = "Image to text";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxImage).EndInit();
             statusStripMain.ResumeLayout(false);
